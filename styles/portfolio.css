@@ -1,0 +1,49 @@
+.portfolio-block {
+    min-height: 84vh;
+    background-color: var(--light-bg);
+    padding-top: 100px;
+}
+
+.portfolio-block_list {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+
+.portfolio-block_list li article {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-secondary);
+}
+
+.hidden-link {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.hidden-title {
+    transition: all 0.2s ease-in-out;
+}
+
+
+.portfolio-block_list li article:hover .hidden-title{
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+
+.portfolio-block_list li article:hover .hidden-link{
+    opacity: 1;
+    transform: translateY(-10px);
+}

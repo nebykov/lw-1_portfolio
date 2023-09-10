@@ -1,0 +1,35 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  padding: 25px;
+}
+
+.about-block_avatar img {
+  height: 300px;
+  border-radius: 100%;
+}
+
+.about-block_info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+  padding: 30px;
+  color: var(--text-color);
+}
+
+.about-block_info h1 {
+  font-size: 70px;
+}
+
+.about-block_info span {
+  color: var(--another-color);
+}
